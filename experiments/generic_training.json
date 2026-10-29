@@ -1,0 +1,163 @@
+{
+  "status": "completed",
+  "task_type": "classification",
+  "target_column": "species",
+  "model_name": "logistic_regression",
+  "train_rows": 132,
+  "test_rows": 15,
+  "metrics": {
+    "accuracy": 0.9333333333333333,
+    "precision": 0.9444444444444445,
+    "recall": 0.9333333333333333,
+    "f1": 0.9326599326599326,
+    "confusion_matrix": [
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        0,
+        5,
+        0
+      ],
+      [
+        0,
+        1,
+        4
+      ]
+    ],
+    "labels": [
+      "Iris-setosa",
+      "Iris-versicolor",
+      "Iris-virginica"
+    ]
+  },
+  "model_path": "C:\\Users\\Admin\\Documents\\autonomous-mlops\\models\\candidate_logistic_regression_20261029143756.joblib",
+  "cleaned_dataset_path": "C:\\Users\\Admin\\Documents\\autonomous-mlops\\uploads\\cleaned\\IRIS_9f66c4264a4d4e79af77f55e0de1028f_dc7c382942fe4ed4b0d18d760e74b652.csv",
+  "cleaning_report": {
+    "status": "ready",
+    "configuration": {
+      "remove_exact_duplicates": true,
+      "convert_numeric_columns": true,
+      "outlier_iqr_multiplier": 1.5
+    },
+    "target_column": "species",
+    "task_type": "classification",
+    "rows_before": 147,
+    "rows_after": 147,
+    "usable_labeled_rows": 147,
+    "target_class_count": 3,
+    "target_class_counts": {
+      "Iris-versicolor": 50,
+      "Iris-virginica": 49,
+      "Iris-setosa": 48
+    },
+    "columns_before": 5,
+    "columns_after": 5,
+    "duplicates_found": 0,
+    "duplicates_removed": 0,
+    "missing_values_before": {
+      "sepal_length": 0,
+      "sepal_width": 0,
+      "petal_length": 0,
+      "petal_width": 0,
+      "species": 0
+    },
+    "missing_values_after": {
+      "sepal_length": 0,
+      "sepal_width": 0,
+      "petal_length": 0,
+      "petal_width": 0,
+      "species": 0
+    },
+    "changed_data_types": [],
+    "invalid_values": {},
+    "potential_outliers": {
+      "sepal_length": 0,
+      "sepal_width": 4,
+      "petal_length": 0,
+      "petal_width": 0
+    },
+    "constant_columns": [],
+    "potential_identifier_columns": [],
+    "potential_target_leakage_features": [],
+    "warnings": [
+      "Potential numeric outliers were reported but not removed."
+    ],
+    "errors": [],
+    "columns": [
+      {
+        "column": "sepal_length",
+        "dtype_before": "float64",
+        "dtype_after": "float64",
+        "missing_before": 0,
+        "missing_after": 0,
+        "invalid_values": 0,
+        "unique_values": 35,
+        "is_target": false,
+        "is_constant_feature": false,
+        "potential_outliers": 0,
+        "imputation_strategy": "not required"
+      },
+      {
+        "column": "sepal_width",
+        "dtype_before": "float64",
+        "dtype_after": "float64",
+        "missing_before": 0,
+        "missing_after": 0,
+        "invalid_values": 0,
+        "unique_values": 23,
+        "is_target": false,
+        "is_constant_feature": false,
+        "potential_outliers": 4,
+        "imputation_strategy": "not required"
+      },
+      {
+        "column": "petal_length",
+        "dtype_before": "float64",
+        "dtype_after": "float64",
+        "missing_before": 0,
+        "missing_after": 0,
+        "invalid_values": 0,
+        "unique_values": 43,
+        "is_target": false,
+        "is_constant_feature": false,
+        "potential_outliers": 0,
+        "imputation_strategy": "not required"
+      },
+      {
+        "column": "petal_width",
+        "dtype_before": "float64",
+        "dtype_after": "float64",
+        "missing_before": 0,
+        "missing_after": 0,
+        "invalid_values": 0,
+        "unique_values": 22,
+        "is_target": false,
+        "is_constant_feature": false,
+        "potential_outliers": 0,
+        "imputation_strategy": "not required"
+      },
+      {
+        "column": "species",
+        "dtype_before": "str",
+        "dtype_after": "str",
+        "missing_before": 0,
+        "missing_after": 0,
+        "invalid_values": 0,
+        "unique_values": 3,
+        "is_target": true,
+        "is_constant_feature": false,
+        "potential_outliers": 0,
+        "imputation_strategy": "none (target is preserved)"
+      }
+    ],
+    "target_preserved": true,
+    "imputation_note": "Missing feature values remain in the cleaned CSV; training imputers are fitted only on training rows and then applied to the held-out rows."
+  },
+  "tracking": {
+    "status": "disabled",
+    "reason": "Set MLFLOW_TRACKING_URI to enable MLflow run logging."
+  }
+}

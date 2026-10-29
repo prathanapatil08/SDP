@@ -1,0 +1,12 @@
+{
+    "timestamp": "2026-10-28T22:08:05",
+    "features_checked": 19,
+    "drifted_features": 2,
+    "drifted_feature_names": [
+        "Partner",
+        "MonthlyCharges"
+    ],
+    "action": "RETRAINING_EVALUATION_RECOMMENDED",
+    "reason": "2 feature(s) showed potential drift. Evaluate a candidate model before deployment.",
+    "deployment_authorized": false
+}

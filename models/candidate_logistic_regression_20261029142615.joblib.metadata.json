@@ -1,0 +1,83 @@
+{
+  "model_name": "logistic_regression",
+  "model_version": "candidate_logistic_regression_20261029142615",
+  "task_type": "classification",
+  "target_column": "species",
+  "required_features": [
+    {
+      "name": "sepal_length",
+      "data_type": "number",
+      "role": "number"
+    },
+    {
+      "name": "sepal_width",
+      "data_type": "number",
+      "role": "number"
+    },
+    {
+      "name": "petal_length",
+      "data_type": "number",
+      "role": "number"
+    },
+    {
+      "name": "petal_width",
+      "data_type": "number",
+      "role": "number"
+    }
+  ],
+  "preprocessing": [
+    "numeric features (sepal_length, sepal_width, petal_length, petal_width): median imputation -> StandardScaler"
+  ],
+  "target_labels": [
+    "Iris-setosa",
+    "Iris-versicolor",
+    "Iris-virginica"
+  ],
+  "evaluation_metrics": {
+    "accuracy": 0.9130434782608695,
+    "precision": 0.9130434782608695,
+    "recall": 0.9130434782608695,
+    "f1": 0.9130434782608695,
+    "confusion_matrix": [
+      [
+        7,
+        0,
+        0
+      ],
+      [
+        0,
+        7,
+        1
+      ],
+      [
+        0,
+        1,
+        7
+      ]
+    ],
+    "labels": [
+      "Iris-setosa",
+      "Iris-versicolor",
+      "Iris-virginica"
+    ]
+  },
+  "metrics_source": "Held-out test partition (23 rows; random_state=42).",
+  "probabilities_supported": true,
+  "training_environment": {
+    "python": "3.12.10",
+    "scikit_learn": "1.9.1",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0"
+  },
+  "artifact_sha256": "94602949bdfde355b3d333f9bff39e859779e7eebb944468ddf5c3f2f4466ef2",
+  "dataset_provenance": {
+    "rows_before_cleaning": 147,
+    "rows_after_cleaning": 147,
+    "duplicates_removed": 0,
+    "cleaning_configuration": {
+      "remove_exact_duplicates": true,
+      "convert_numeric_columns": true,
+      "outlier_iqr_multiplier": 1.5
+    }
+  }
+}

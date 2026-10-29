@@ -1,0 +1,11 @@
+{
+    "baseline_accuracy": 0.7626,
+    "candidate_accuracy": 0.7946,
+    "baseline_churn_f1": 0.5835,
+    "candidate_churn_f1": 0.6436,
+    "accuracy_check_passed": true,
+    "churn_f1_check_passed": true,
+    "action": "PROMOTION_RECOMMENDED",
+    "reason": "Candidate passed both accuracy and churn F1 checks.",
+    "deployment_authorized": false
+}

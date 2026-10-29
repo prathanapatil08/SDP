@@ -1,0 +1,18 @@
+{
+  "models": [
+    {
+      "name": "customer-churn",
+      "version": "1.0",
+      "path": "C:\\Users\\Admin\\Documents\\autonomous-mlops\\models\\baseline_model.joblib",
+      "framework": "scikit-learn",
+      "registered_at": "2026-10-28T09:18:28.119426+00:00"
+    },
+    {
+      "name": "customer-churn",
+      "version": "2.0",
+      "path": "C:\\Users\\Admin\\Documents\\autonomous-mlops\\models\\candidate_model.joblib",
+      "framework": "scikit-learn",
+      "registered_at": "2026-10-28T09:18:28.128952+00:00"
+    }
+  ]
+}

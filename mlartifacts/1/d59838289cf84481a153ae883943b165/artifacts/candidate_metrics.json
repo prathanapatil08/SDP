@@ -1,0 +1,7 @@
+{
+    "accuracy": 0.755,
+    "churn_f1_score": 0.5812,
+    "training_records": 800,
+    "testing_records": 200,
+    "candidate_model_path": "models\\candidate_model.joblib"
+}

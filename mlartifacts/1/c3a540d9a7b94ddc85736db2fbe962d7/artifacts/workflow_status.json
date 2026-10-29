@@ -1,0 +1,6 @@
+{
+    "workflow": "COMPLETED",
+    "promotion_action": "PROMOTION_RECOMMENDED",
+    "deployment_authorized": false,
+    "note": "No model was deployed or replaced."
+}

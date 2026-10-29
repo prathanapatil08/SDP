@@ -1,0 +1,20 @@
+feature,feature_type,test,statistic,p_value,reference_missing,incoming_missing,missingness_statistic,missingness_p_value,comparison_status,drift_detected,explanation
+gender,categorical,Chi-square test,0.20725831917077187,0.6489248449382505,0,0,,1.0,compared,False,No statistically significant change detected.
+SeniorCitizen,numeric,KS two-sample test,0.0004004550625711367,1.0,0,0,,1.0,compared,False,No statistically significant change detected.
+Partner,categorical,Chi-square test,4.666477317486228,0.030756952364592475,0,0,,1.0,compared,True,Feature distribution changed (p=0.03076).
+Dependents,categorical,Chi-square test,0.37707435686860724,0.5391731649285009,0,0,,1.0,compared,False,No statistically significant change detected.
+tenure,numeric,KS two-sample test,0.020465301478953313,0.8483908603003077,0,0,,1.0,compared,False,No statistically significant change detected.
+PhoneService,categorical,Chi-square test,0.5295650011226913,0.4667897994531459,0,0,,1.0,compared,False,No statistically significant change detected.
+MultipleLines,categorical,Chi-square test,1.137690945133469,0.5661787303817436,0,0,,1.0,compared,False,No statistically significant change detected.
+InternetService,categorical,Chi-square test,0.735822968021849,0.6921784478371007,0,0,,1.0,compared,False,No statistically significant change detected.
+OnlineSecurity,categorical,Chi-square test,1.3779063258499888,0.5021014124175625,0,0,,1.0,compared,False,No statistically significant change detected.
+OnlineBackup,categorical,Chi-square test,1.2700946571381413,0.5299104078227234,0,0,,1.0,compared,False,No statistically significant change detected.
+DeviceProtection,categorical,Chi-square test,0.9171277624289939,0.6321908951123912,0,0,,1.0,compared,False,No statistically significant change detected.
+TechSupport,categorical,Chi-square test,2.2350731643739135,0.32708454889719096,0,0,,1.0,compared,False,No statistically significant change detected.
+StreamingTV,categorical,Chi-square test,1.4139391179288565,0.4931363560191694,0,0,,1.0,compared,False,No statistically significant change detected.
+StreamingMovies,categorical,Chi-square test,0.7133648964388198,0.6999947470232357,0,0,,1.0,compared,False,No statistically significant change detected.
+Contract,categorical,Chi-square test,2.213438073685019,0.33064200763106394,0,0,,1.0,compared,False,No statistically significant change detected.
+PaperlessBilling,categorical,Chi-square test,0.24889940261522803,0.6178511101979668,0,0,,1.0,compared,False,No statistically significant change detected.
+PaymentMethod,categorical,Chi-square test,2.2359561986197676,0.5249008884136068,0,0,,1.0,compared,False,No statistically significant change detected.
+MonthlyCharges,numeric,KS two-sample test,0.3947394766780432,5.675009630764992e-123,0,0,,1.0,compared,True,Feature distribution changed (p=5.675e-123).
+TotalCharges,numeric,KS two-sample test,0.025786120591581307,0.5949791165061742,0,0,,1.0,compared,False,No statistically significant change detected.

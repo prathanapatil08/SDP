@@ -1,0 +1,10 @@
+{
+    "baseline": {
+        "accuracy": 0.7626,
+        "churn_f1_score": 0.5835
+    },
+    "candidate": {
+        "accuracy": 0.7946,
+        "churn_f1_score": 0.6436
+    }
+}
